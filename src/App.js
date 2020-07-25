@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { Component } from "react";
 import './App.css';
-import NavBar from './components/NavBars/NavBar'
+import NavBar from './components/NavBar'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-function App() {
-  return (
-      <div className="App">
-          <NavBar />
-          <main style={{marginTop: '64px'}}>
-              <p>This is the page content </p>
-          </main>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render(){
+    const styles ={
+    };
+    return (
+        <div className="App">
+            <NavBar styles={styles} />
+            <main style={{marginTop: '0px'}}>
+                <p>This is the page content </p>
+            </main>
+      </div>
+    );
+  }
 }
 
 export default App;
