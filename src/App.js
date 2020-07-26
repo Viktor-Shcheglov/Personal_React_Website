@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import ProfilePage from './components/ProfilePage';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -12,12 +13,17 @@ class App extends Component {
     const styles ={
     };
     return (
-        <div className="App">
-          <CssBaseline />
+        <div className="App" >
+          <div id="background" style={{
+          backgroundImage: 'url("https://images5.alphacoders.com/329/329713.jpg")',
+          backgroundRepeat: "repeat-y",
+          height: "1900px"}}>
+          <Router>
+            <CssBaseline />
             <NavBar />
-            <main style={{marginTop: '0px'}}>
-                <p>This is the page content </p>
-            </main>
+            <Route path="/" component={ProfilePage}/>
+          </Router>
+          </div>
       </div>
     );
   }

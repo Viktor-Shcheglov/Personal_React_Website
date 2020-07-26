@@ -8,7 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import useMediaQuery from '@material-ui/core/useMediaQuery'
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,18 +25,18 @@ const useStyles = makeStyles((theme) => ({
   },
   items:{
     color:"#F0FFFF",
-    [theme.breakpoints.down('510')]: {
+    [theme.breakpoints.down('548')]: {
       display: 'none',
     }
   },
   menuButton:{
-    [theme.breakpoints.up('510')]: {
+    [theme.breakpoints.up('548')]: {
       display: 'none',
     }
   },
 }));
 
-const Example = (props) => {
+const NavBar = (props) => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = (event) => {
@@ -52,14 +52,13 @@ const Example = (props) => {
   const handleClose1 = () => {
     setAnchorEl1(null);
   };
-  const preventDefault = (event) => event.preventDefault();
   return (
     <div className={classes.root}>
-      <AppBar className ={classes.bar} position="sticky">
+      <AppBar className ={classes.bar} position="sticky" style={{ background: 'transparent', boxShadow: 'none'}}>
         <Toolbar className={classes.tolbar1}>
           <Button  href ="/" color="inherit"><Typography variant="h6" className={classes.Logo} href="/">Viktor Shcheglov</Typography></Button>
           <div style={{flex:1}}/>
-          <Button className={classes.items} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+          <Button variant="contained" color="secondary" className={classes.items} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
             Projects
           </Button>
           <Menu
@@ -69,11 +68,11 @@ const Example = (props) => {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <MenuItem onClick={handleClose1}>Algorithm Visualizer</MenuItem>
-            <MenuItem onClick={handleClose1}>Finance Tracker</MenuItem>
+            <MenuItem onClick={handleClose}>Algorithm Visualizer</MenuItem>
+            <MenuItem onClick={handleClose}>Finance Tracker</MenuItem>
           </Menu>
-          <Button className={classes.items} href="https://drive.google.com/file/d/1gkiw7W3PciwtSTQI7wSkiJPSy7kZDRIm/view?usp=sharing" target="_blank" color="inherit">Resume</Button>
-          <Button className={classes.items} href ="https://github.com/Viktor-Shcheglov" target="_blank" color="inherit">GitHub</Button>
+          <Button variant="contained" color="secondary" style={{marginLeft:"10px"}} className={classes.items} href="https://drive.google.com/file/d/1gkiw7W3PciwtSTQI7wSkiJPSy7kZDRIm/view?usp=sharing" target="_blank" >Resume</Button>
+          <Button variant="contained" color="secondary" style={{marginLeft:"10px"}}className={classes.items} href ="https://github.com/Viktor-Shcheglov" target="_blank" >GitHub</Button>
 
           <IconButton aria-controls="simple-menu1" onClick={handleClick1} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
@@ -97,4 +96,4 @@ const Example = (props) => {
   );
 }
 
-export default Example;
+export default NavBar;
