@@ -15,7 +15,7 @@ class App extends Component {
         <div className="App">
           <CssBaseline />
             <NavBar />
-            <main style={{marginTop: '100px'}}>
+            <main style={{marginTop: '0px'}}>
                 <p>This is the page content </p>
             </main>
       </div>
