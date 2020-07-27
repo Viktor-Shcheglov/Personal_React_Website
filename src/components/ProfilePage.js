@@ -44,10 +44,10 @@ class LoginControl extends React.Component {
             </h2>
         </div>
         <div width="100%" style={{display: 'flex',justifyContent: 'center'}}>
-            <Breadcrumbs aria-label="breadcrumb" style={{color:"white",fontSize:"20px"}}>
-                <Button  variant="contained" color="secondary" target="_blank" >Expirience</Button>
-                <Button  variant="contained" color="secondary" target="_blank" >Education</Button>
-                <Button  variant="contained" color="secondary" target="_blank" >Technical Skills</Button>
+            <Breadcrumbs aria-label="breadcrumb" style={{color:"white",fontSize:"16px"}}>
+                <Button  style={{color:"white",fontSize:"11px"}} variant="contained" color="secondary" target="_blank" >Expirience</Button>
+                <Button  style={{color:"white",fontSize:"11px"}} variant="contained" color="secondary" target="_blank" >Education</Button>
+                <Button  style={{color:"white",fontSize:"11px"}} variant="contained" color="secondary" target="_blank" >Tech Skills</Button>
             </Breadcrumbs>
         </div>
         <div>
