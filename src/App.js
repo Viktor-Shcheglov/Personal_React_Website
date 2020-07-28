@@ -15,7 +15,8 @@ class App extends Component {
     return (
         <div className="App" >
           <div id="background" style={{
-          backgroundImage: 'url("https://images5.alphacoders.com/329/329713.jpg")',
+          //backgroundImage: 'url("https://images5.alphacoders.com/329/329713.jpg")',
+          backgroundColor:"black",
           backgroundRepeat: "repeat-y",
           height: "1900px"}}>
           <Router>

@@ -1,37 +1,41 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
-function handleClick(event) {
-    event.preventDefault();
-    console.info('You clicked a breadcrumb.');
+import Container from '@material-ui/core/Container';
+import Test from './test'
+
+const LoginControl =(props)=>  {
+    const [showEdu,setEdu] = React.useState(false);
+    const [showExp,setExp] = React.useState(false);
+    const [showTech,setTech] = React.useState(false);
+    const onClickExp = () =>{
+    setExp(!showExp);
+    setEdu(false);
+    setTech(false);
   }
-class LoginControl extends React.Component {
-    constructor(props) {
-      super(props);
-      this.handleLoginClick = this.handleLoginClick.bind(this);
-      this.handleLogoutClick = this.handleLogoutClick.bind(this);
-      this.state = {isLoggedIn: false};
-    }
-  
-    handleLoginClick() {
-      this.setState({isLoggedIn: true});
-    };
-  
-    handleLogoutClick() {
-      this.setState({isLoggedIn: false});
-    };
-    render() {
-      const isLoggedIn = this.state.isLoggedIn;
-      let button;
-  
-      if (isLoggedIn) {
-        button = <LogoutButton onClick={this.handleLogoutClick} />;
-      } else {
-        button = <LoginButton onClick={this.handleLoginClick} />;
-      }
-  
+  const onClickEdu = () =>{
+    setExp(false);
+    setEdu(!showEdu);
+    setTech(false);
+  }
+  const onClickTech = () =>{
+    setExp(false);
+    setEdu(false);
+    setTech(!showTech);
+  }
+const Results = () => (
+    <div id="results" className="search-results" >
+      Something 
+    </div>)
+const Results1 = () => (
+    <div id="results" className="search-results" >
+      Something1
+    </div>)
+const Results2 = () => (
+    <div id="results" className="search-results" >
+      Something2
+    </div>)
+    
       return (
         <>
         <div width="100%">
@@ -45,50 +49,19 @@ class LoginControl extends React.Component {
         </div>
         <div width="100%" style={{display: 'flex',justifyContent: 'center'}}>
             <Breadcrumbs aria-label="breadcrumb" style={{color:"white",fontSize:"16px"}}>
-                <Button  style={{color:"white",fontSize:"11px"}} variant="contained" color="secondary" target="_blank" >Expirience</Button>
-                <Button  style={{color:"white",fontSize:"11px"}} variant="contained" color="secondary" target="_blank" >Education</Button>
-                <Button  style={{color:"white",fontSize:"11px"}} variant="contained" color="secondary" target="_blank" >Tech Skills</Button>
+                <Button  style={{color:"white",fontSize:"11px"}} variant="contained" color="secondary" target="_blank" onClick={onClickExp}>Expirience</Button>
+                <Button  style={{color:"white",fontSize:"11px"}} variant="contained" color="secondary" target="_blank" onClick ={onClickEdu}>Education</Button>
+                <Button  style={{color:"white",fontSize:"11px"}} variant="contained" color="secondary" target="_blank" onClick={onClickTech}>Tech Skills</Button>
             </Breadcrumbs>
         </div>
         <div>
-        <Greeting isLoggedIn={isLoggedIn} />
-        {button}
+        <p style = {{color:"white"}}>{showExp ? <Results/> : null}</p>
+        <p style = {{color:"white"}}>{showEdu ? <Results1/> : null}</p>
+        <p style = {{color:"white"}}>{showTech ? <Results2/> : null}</p>
+        <Test />
         </div>
         </>
       );
-    }
-  }
-  
-  function UserGreeting(props) {
-    return <h1>Welcome back!</h1>;
-  }
-  
-  function GuestGreeting(props) {
-    return <h1>Please sign up.</h1>;
-  }
-  
-  function Greeting(props) {
-    const isLoggedIn = props.isLoggedIn;
-    if (isLoggedIn) {
-      return <UserGreeting />;
-    }
-    return <GuestGreeting />;
-  }
-  
-  function LoginButton(props) {
-    return (
-      <button onClick={props.onClick}>
-        Login
-      </button>
-    );
-  }
-  
-  function LogoutButton(props) {
-    return (
-      <button onClick={props.onClick}>
-        Logout
-      </button>
-    );
-  }
+}
 
 export default LoginControl;
