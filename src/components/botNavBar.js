@@ -25,7 +25,7 @@ componentWillUnmount() {
     window.removeEventListener("resize", this.updateDimensions.bind(this));
 }
 render(){
-    console.log(innerHeight)
+
   return (
     <BottomNavigation
       value={this.state.value}
