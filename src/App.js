@@ -31,19 +31,18 @@ class App extends React.Component {
     return (
         <div className="App" >
           <div id="background" style={{
-            //backgroundColor: '#C2CAD0',
+            backgroundColor: '#C2CAD0',
             backgroundAttachment: "fixed",
             backgroundPosition:"center",
             backgroundRepeat:"no-repeat",
             backgroundSize:"cover",
+            minHeight:"100vh"
             }}>
             <Router>
               <CssBaseline />
               <NavBar />
               <Route path="/" component={ProfilePage}/>
-              {/*<div style={{display:"flex",flex:"1",flexDirection:"column"}} />*/}
-              <img src="https://www.wafttech.com/public/blog/0812552A25FAC79-DC1C91108F000B3-stack%20-%20Copy.png" alt="programing langauges" style={{objectFit:"cover",maxWidth: "100%",width:"50%",height:"50%"}}/>
-              <BotBar />
+              <div style={{marginTop:"auto",bottom:"0",margin:"auto",textAlign:"center",display: "flex",justifyContent:"center",width:"100%"}}><BotBar /> </div>
             </Router>
           </div>
       </div>

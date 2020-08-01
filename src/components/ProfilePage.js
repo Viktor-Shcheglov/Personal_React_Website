@@ -73,7 +73,7 @@ const Results2 = () => (
             backgroundImage: 'url("https://images5.alphacoders.com/329/329713.jpg")',
             backgroundPosition:"center",
             backgroundSize:"cover",
-            }}><h1 style={{marginTop:"0px",fontSize: "3rem",fontWeight: "bold",fontFamily:"Comic Sans MS",fontStyle: "italic",color:"orange"}}>Viktor Shcheglov Full Stack Developer</h1></div>
+            }}><h1 style={{marginTop:"0px",fontSize: "3rem",fontWeight: "bold",fontFamily:"Raleway",fontStyle: "italic",color:"orange"}}>Viktor Shcheglov Full Stack Developer</h1></div>
             <h2 style={{marginTop:"0px",fontSize: "1.5rem",fontFamily:"Raleway",color:"black"}}>
                 Welcome to my site! I am a college student proficient in Python, React.js and Node.js seaking an Internship for the 2021 Summer.
                 <br></br>I have previously worked for two summers in various companies in Software Development and Architecture Intern positions.
@@ -93,6 +93,7 @@ const Results2 = () => (
         <p style = {{color:"white"}}>{showEdu ? <Results1/> : null}</p>
         <p style = {{color:"white"}}>{showTech ? <Results2/> : null}</p>
         </div>
+        {/*<img src="https://www.wafttech.com/public/blog/0812552A25FAC79-DC1C91108F000B3-stack%20-%20Copy.png" alt="programing langauges" style={{objectFit:"cover",maxWidth: "50%",width:"60%",height:"60%",flex:"1"}}/> */}
         </>
       );
 }
