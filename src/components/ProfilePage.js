@@ -73,8 +73,8 @@ const Results2 = () => (
             backgroundImage: 'url("https://images5.alphacoders.com/329/329713.jpg")',
             backgroundPosition:"center",
             backgroundSize:"cover",
-            }}><h1 style={{marginTop:"0px",fontSize: "3rem",fontWeight: "bold",fontFamily:"Comic Sans MS",fontStyle: "italic",color:"#E7717D"}}>Viktor Shcheglov Full Stack Developer</h1></div>
-            <h2 style={{marginTop:"0px",fontSize: "1.5rem",fontFamily:"Raleway",color:"#E7717D"}}>
+            }}><h1 style={{marginTop:"0px",fontSize: "3rem",fontWeight: "bold",fontFamily:"Comic Sans MS",fontStyle: "italic",color:"orange"}}>Viktor Shcheglov Full Stack Developer</h1></div>
+            <h2 style={{marginTop:"0px",fontSize: "1.5rem",fontFamily:"Raleway",color:"black"}}>
                 Welcome to my site! I am a college student proficient in Python, React.js and Node.js seaking an Internship for the 2021 Summer.
                 <br></br>I have previously worked for two summers in various companies in Software Development and Architecture Intern positions.
                 <br></br>You can find my complete information in the sections bellow or my most relevant expirience in my <a style={{color:"darkRed",textDecoration: "none"}} rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1gkiw7W3PciwtSTQI7wSkiJPSy7kZDRIm/view?usp=sharing">Resume.</a>
