@@ -2,9 +2,9 @@ import React, { Component,useState} from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
 class BotBar extends React.Component {
 constructor(props) {
         super(props);
@@ -35,9 +35,9 @@ render(){
       showLabels
       style={{backgroundColor: "rgba(0, 0, 0, 0)"}}
     >
-      <BottomNavigationAction label="Recents" icon={<RestoreIcon style={{color:"red"}} />} />
-      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon style={{color:"red"}}/>} />
-      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon style={{color:"red"}}/>} />
+      <BottomNavigationAction target="_blank" href="https://www.linkedin.com/in/viktor-shcheglov/" label="LinkedIn" icon={<LinkedInIcon style={{color:"red"}} />} />
+      <BottomNavigationAction target="_blank" href="https://github.com/Viktor-Shcheglov" label="GitHub" icon={<GitHubIcon style={{color:"red"}}/>} />
+      <BottomNavigationAction  href="https://drive.google.com/file/d/1gkiw7W3PciwtSTQI7wSkiJPSy7kZDRIm/view?usp=sharing" target="_blank" label="Resume" icon={<MenuBookIcon style={{color:"red"}}/>} />
     </BottomNavigation>
   );
 }

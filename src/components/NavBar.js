@@ -56,7 +56,7 @@ const NavBar = (props) => {
     <div className={classes.root}>
       <AppBar className ={classes.bar} position="sticky" style={{ background: 'transparent', boxShadow: 'none'}}>
         <Toolbar className={classes.tolbar1}>
-          <Button  href ="/" color="inherit"><Typography variant="h6" className={classes.Logo} href="/">Viktor Shcheglov</Typography></Button>
+          <Button  href ="/" color="inherit"><Typography variant="h6" style={{color:"#E7717D"}}className={classes.Logo} href="/">Viktor Shcheglov</Typography></Button>
           <div style={{flex:1}}/>
           <Button variant="contained" color="secondary" className={classes.items} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
             Projects
