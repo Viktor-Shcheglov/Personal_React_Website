@@ -5,9 +5,7 @@ import Box from '@material-ui/core/Button';
 import BusinessIcon from '@material-ui/icons/Business';
 import SchoolIcon from '@material-ui/icons/School';
 import BuildIcon from '@material-ui/icons/Build';
-import Container from '@material-ui/core/Container';
-import Test from './test'
-
+import './ProfilePage.css'
 const LoginControl =(props)=>  {
     const [showEdu,setEdu] = React.useState(false);
     const [showExp,setExp] = React.useState(false);
@@ -88,12 +86,12 @@ const Results2 = () => (
                 <Button  style={{color:"white",fontSize:".6rem",padding:"6px"}} variant="contained" color="secondary" target="_blank" onClick={onClickTech}><BuildIcon color="white" style={{marginRight:"2px"}}/>Tech Skills</Button>
             </Breadcrumbs>
         </div>
-        <div>
+        <div style={{flex:1}}>
         <p style = {{color:"white",cursor:"auto"}}>{showExp ? <Results/>  : null}</p>
         <p style = {{color:"white"}}>{showEdu ? <Results1/> : null}</p>
         <p style = {{color:"white"}}>{showTech ? <Results2/> : null}</p>
         </div>
-        {/*<img src="https://www.wafttech.com/public/blog/0812552A25FAC79-DC1C91108F000B3-stack%20-%20Copy.png" alt="programing langauges" style={{objectFit:"cover",maxWidth: "50%",width:"60%",height:"60%",flex:"1"}}/> */}
+        <div className="test"><img width="32" height="32" src="https://www.wafttech.com/public/blog/0812552A25FAC79-DC1C91108F000B3-stack%20-%20Copy.png" alt="programing langauges" style={{objectFit:"cover",maxWidth: "50%",width:"60%",height:"60%",flex:"1",onHover:""}}/></div>        
         </>
       );
 }

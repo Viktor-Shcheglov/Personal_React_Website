@@ -1,5 +1,4 @@
-import React, { Component,useState} from "react";
-import { makeStyles } from '@material-ui/core/styles';
+import React from "react";
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';

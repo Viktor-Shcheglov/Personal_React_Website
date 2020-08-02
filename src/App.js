@@ -1,12 +1,10 @@
-import React, { Component,useLayoutEffect, useState } from "react";
+import React from "react";
 import './App.css';
 import NavBar from './components/NavBar'
 import BotBar from './components/botNavBar'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import ProfilePage from './components/ProfilePage';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Grid from '@material-ui/core/Grid';
 class App extends React.Component {
   constructor(props) {
     super(props);
