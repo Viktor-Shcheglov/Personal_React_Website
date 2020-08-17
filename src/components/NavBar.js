@@ -89,7 +89,6 @@ const NavBar = (props) => {
             <MenuItem component="a" href="https://drive.google.com/file/d/1gkiw7W3PciwtSTQI7wSkiJPSy7kZDRIm/view?usp=sharing" target="_blank" onClick={handleClose1} >Resume</MenuItem>
             <MenuItem component="a" href="https://github.com/Viktor-Shcheglov" target="_blank" onClick={handleClose1}>GitHub</MenuItem>
           </Menu>
-          
         </Toolbar>
       </AppBar>
     </div>

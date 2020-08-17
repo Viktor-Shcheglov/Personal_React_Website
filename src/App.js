@@ -2,9 +2,11 @@ import React from "react";
 import './App.css';
 import NavBar from './components/NavBar'
 import BotBar from './components/botNavBar'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
 import ProfilePage from './components/ProfilePage';
+import blog from './components/blog'
+import test from './components/test';
+import { Navbar } from "reactstrap";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -28,21 +30,20 @@ class App extends React.Component {
   render(){
     return (
         <div className="App" >
-          <div id="background" style={{
+          {/*<div id="background" style={{
             backgroundColor: '#C2CAD0',
             backgroundAttachment: "fixed",
             backgroundPosition:"center",
             backgroundRepeat:"no-repeat",
             backgroundSize:"cover",
             minHeight:"100vh"
-            }}>
+            }}> */}
+            <Navbar/>
             <Router>
-              <CssBaseline />
-              <NavBar />
-              <Route path="/" component={ProfilePage}/>
-              <div style={{marginTop:"auto",bottom:"0",margin:"auto",textAlign:"center",display: "flex",justifyContent:"center",width:"100%"}}><BotBar /> </div>
+              <Route path="/home" exact={true} component={test}/>
+              <Route path="/blog" component={blog}/>
+              {/*<div style={{marginTop:"auto",bottom:"0",margin:"auto",textAlign:"center",display: "flex",justifyContent:"center",width:"100%"}}><BotBar /> </div>*/}
             </Router>
-          </div>
       </div>
     );
   }
