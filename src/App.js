@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route,Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route,Switch,Link} from 'react-router-dom';
 import bloger from './components/blog'
 import test from './components/test';
 class App extends React.Component {
@@ -15,10 +15,8 @@ class App extends React.Component {
             minHeight:"100vh"
             }}> */}
             <Router>
-              <Switch>
-                <Route path="/blog" exact = {true}component={bloger}/>
-                <Route path="/" exact={true} component={test}/>
-              </Switch>
+              <Route path="/blog" exact = {true}component={bloger}/>
+              <Route path="/" exact={true} component={test}/>
               {/*<div style={{marginTop:"auto",bottom:"0",margin:"auto",textAlign:"center",display: "flex",justifyContent:"center",width:"100%"}}><BotBar /> </div>*/}
             </Router>
       </div>

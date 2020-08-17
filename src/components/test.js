@@ -3,13 +3,13 @@ import './assets/css/main.css';
 import photo from './images/thisone1.jpg'
 import { Icon, InlineIcon } from '@iconify/react'; 
 import reactIcon from '@iconify/icons-fa-brands/react';
+import {Link} from 'react-router-dom';
 class BotBar extends React.Component {
     
     render (){
 
       return (
         <div>
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
           {/* Nav */}
           <nav id="nav">
             <ul className="container">
@@ -17,7 +17,7 @@ class BotBar extends React.Component {
               <li><a href="#work">Work</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li><a href ="/blog">Blog</a></li>
+              <li><Link to ="/blog">Blog</Link></li>
             </ul>
           </nav>
           {/* Home */}
