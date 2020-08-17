@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
   
-  const NavBar = (props) => {
+  const Blogger = (props) => {
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const handleClick = (event) => {
@@ -96,4 +96,4 @@ const useStyles = makeStyles((theme) => ({
     );
   }
   
-  export default NavBar;
+  export default Blogger;
