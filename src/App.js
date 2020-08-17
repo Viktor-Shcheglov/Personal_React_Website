@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from './components/NavBar'
 import BotBar from './components/botNavBar'
-import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route,Switch} from 'react-router-dom';
 import ProfilePage from './components/ProfilePage';
 import blog from './components/blog'
 import test from './components/test';
@@ -40,8 +40,9 @@ class App extends React.Component {
             <Navbar/>
             <Router>
               <Switch>
-                <Route path="/" exact={true} component={test}/>
                 <Route path="/blog" exact = {true}component={blog}/>
+                <Route path="/" exact={true} component={test}/>
+               
               </Switch>
               {/*<div style={{marginTop:"auto",bottom:"0",margin:"auto",textAlign:"center",display: "flex",justifyContent:"center",width:"100%"}}><BotBar /> </div>*/}
             </Router>
