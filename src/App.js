@@ -40,7 +40,7 @@ class App extends React.Component {
             <Navbar/>
             <Router>
               <Route path="/" exact={true} component={test}/>
-              <Route path="/blog" component={blog}/>
+              <Route path="/blog" exact = {true}component={blog}/>
               {/*<div style={{marginTop:"auto",bottom:"0",margin:"auto",textAlign:"center",display: "flex",justifyContent:"center",width:"100%"}}><BotBar /> </div>*/}
             </Router>
       </div>
