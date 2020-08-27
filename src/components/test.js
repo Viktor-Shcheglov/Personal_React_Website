@@ -20,7 +20,7 @@ class BotBar extends React.Component {
               <li><a href="#top">Top</a></li>
               <li><a href="#work">Skills</a></li>
               <li><a href="#portfolio">Expirience</a></li>
-              <li><a href="https://drive.google.com/file/d/1gkiw7W3PciwtSTQI7wSkiJPSy7kZDRIm/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
+              <li><a href="https://drive.google.com/file/d/1iV32OXT6wJGJSAqh40nMt7Yw-N6KkO83/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
               <li><Link to ="/blog">Blog</Link></li>
             </ul>
           </nav>
@@ -88,7 +88,7 @@ class BotBar extends React.Component {
               </div>
               <footer>
               <p>You can the my complete list of my skills at the end of my resume.</p>
-              <a style={{marginTop:"-5px"}} href="https://drive.google.com/file/d/1gkiw7W3PciwtSTQI7wSkiJPSy7kZDRIm/view?usp=sharing" target="_blank" className="button large scrolly">Resume</a>
+              <a style={{marginTop:"-5px"}} href="https://drive.google.com/file/d/1iV32OXT6wJGJSAqh40nMt7Yw-N6KkO83/view?usp=sharing" target="_blank" className="button large scrolly">Resume</a>
               </footer>
               <a href="#portfolio" className="button large scrolly">Expirience</a>
             </div>
