@@ -90,7 +90,7 @@ class BotBar extends React.Component {
               <p>You can the my complete list of my skills at the end of my resume.</p>
               <a style={{marginTop:"-5px"}} href="https://drive.google.com/file/d/1iV32OXT6wJGJSAqh40nMt7Yw-N6KkO83/view?usp=sharing" target="_blank" className="button large scrolly">Resume</a>
               </footer>
-              <a href="#portfolio" className="button large scrolly">Expirience</a>
+              <a href="#portfolio" className="button large scrolly">Experience</a>
             </div>
           </article>
           {/* Portfolio */}
