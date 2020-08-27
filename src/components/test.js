@@ -20,7 +20,7 @@ class BotBar extends React.Component {
               <li><a href="#top">Top</a></li>
               <li><a href="#work">Skills</a></li>
               <li><a href="#portfolio">Expirience</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="https://drive.google.com/file/d/1gkiw7W3PciwtSTQI7wSkiJPSy7kZDRIm/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
               <li><Link to ="/blog">Blog</Link></li>
             </ul>
           </nav>
