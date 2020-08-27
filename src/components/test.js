@@ -35,8 +35,8 @@ class BotBar extends React.Component {
                   <header>
                     <h1>Hi. I'm <strong>Viktor Shcheglov</strong>.</h1>
                   </header>
-                  <p>I am a college student studying <strong>Computer Science</strong>proficeint in <strong>Full Stack Development</strong> and familiar with <strong>Machine Learning</strong>.</p>
-                  <p style={{marginTop:"-2rem"}}>I am currently looking for a <strong>Software Development Internship</strong>for Summer 2021.</p>
+                  <p>I am a college student studying <strong>Computer Science </strong>proficeint in <strong>Full Stack Development </strong> and familiar with <strong>Machine Learning </strong>.</p>
+                  <p style={{marginTop:"-2rem"}}>I am currently looking for a <strong>Software Development Internship </strong>for Summer 2021.</p>
                   <a href="#work" className="button large scrolly">Skills</a>
                 </div>
               </div>
