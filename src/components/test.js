@@ -3,6 +3,10 @@ import './assets/css/main.css';
 import photo from './images/thisone1.jpg'
 import { Icon, InlineIcon } from '@iconify/react'; 
 import reactIcon from '@iconify/icons-fa-brands/react';
+import nodeIcon from '@iconify/icons-fa-brands/node'
+import pythonIcon from '@iconify/icons-fa-brands/python'
+import awsIcon from '@iconify/icons-fa-brands/aws'
+import jsIcon from '@iconify/icons-fa-brands/js-square'
 import {Link} from 'react-router-dom';
 class BotBar extends React.Component {
     
@@ -14,8 +18,8 @@ class BotBar extends React.Component {
           <nav id="nav">
             <ul className="container">
               <li><a href="#top">Top</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#work">Skills</a></li>
+              <li><a href="#portfolio">Expirience</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><Link to ="/blog">Blog</Link></li>
             </ul>
@@ -42,37 +46,51 @@ class BotBar extends React.Component {
           <article id="work" className="wrapper style2">
             <div className="container">
               <header>
-                <h2>Aenean ata col magna sit dui.</h2>
-                <p>Odio turpis amet sed consequat eget posuere consequat.</p>
+                <h2>This site is still under development.</h2>
+                <p>Below you can find some languages and technologies I am proficient in.</p>
               </header>
               <div className="row aln-center">
                 <div className="col-4 col-6-medium col-12-small">
                   <section className="box style1">
-                    <span className="icon featured fa-comments" />
-                    <h3>Consequat lorem</h3>
-                    <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+                    <span className="icon featured" />
+                    <Icon icon={pythonIcon} width="70" height="70" />
+                    <h3>Python</h3>
                   </section>
                 </div>
                 <div className="col-4 col-6-medium col-12-small">
                   <section className="box style1">
-                    <span className="icon solid featured fa-camera-retro" />
-                    <h3>Lorem dolor tempus</h3>
-                    <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+                    <span className="icon solid featured" />
+                    <Icon icon={nodeIcon} width="70" height="70" />
+                    <h3>Node.js</h3>
                   </section>
                 </div>
                 <div className="col-4 col-6-medium col-12-small">
                   <section className="box style1">
                     <span className="icon featured fa-brands:react"/>
-                    <Icon icon={reactIcon} width="100" height="100" />
-                    <h3>Feugiat posuere</h3>
-                    <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+                    <Icon icon={reactIcon} width="70" height="70" />
+                    <h3>React.js</h3>
                   </section>
                 </div>
+                <div className="col-4 col-6-medium col-12-small">
+                  <section className="box style1">
+                    <span className="icon featured fa-brands:react"/>
+                    <Icon icon={awsIcon} width="70" height="70" />
+                    <h3>Amazon Web Services</h3>
+                  </section>
+                </div>
+                <div className="col-4 col-6-medium col-12-small">
+                  <section className="box style1">
+                    <span className="icon featured fa-brands:react"/>
+                    <Icon icon={jsIcon} width="70" height="70" />
+                    <h3>JavaScript</h3>
+                  </section>
+                </div> 
               </div>
               <footer>
-                <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-                <a href="#portfolio" className="button large scrolly">Non cras at ut ornare quam</a>
+              <p>You can the my complete list of my skills at the end of my resume.</p>
+              <a style={{marginTop:"-5px"}} href="https://drive.google.com/file/d/1gkiw7W3PciwtSTQI7wSkiJPSy7kZDRIm/view?usp=sharing" target="_blank" className="button large scrolly">Resume</a>
               </footer>
+              <a href="#portfolio" className="button large scrolly">Expirience</a>
             </div>
           </article>
           {/* Portfolio */}
@@ -140,7 +158,7 @@ class BotBar extends React.Component {
                 <p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
               </header>
               <div className="row">
-                <div className="col-12">
+                {/* <div className="col-12">
                   <form method="post" action="#">
                     <div className="row">
                       <div className="col-6 col-12-small">
@@ -163,7 +181,7 @@ class BotBar extends React.Component {
                       </div>
                     </div>
                   </form>
-                </div>
+                </div> */}
                 <div className="col-12">
                   <hr />
                   <h3>Find me on ...</h3>
@@ -190,11 +208,6 @@ class BotBar extends React.Component {
                   <hr />
                 </div>
               </div>
-              <footer>
-                <ul id="copyright">
-                  <li>© Untitled. All rights reserved.</li>
-                </ul>
-              </footer>
             </div>
           </article>
           {/* Scripts */}

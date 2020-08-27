@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route,Switch,Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route,Switch,Link, IndexRoute} from 'react-router-dom';
 import bloger from './components/blog'
 import test from './components/test';
 class App extends React.Component {
