@@ -19,9 +19,10 @@ class BotBar extends React.Component {
             <ul className="container">
               <li><a href="#top">Top</a></li>
               <li><a href="#work">Skills</a></li>
-              <li><a href="#portfolio">Expirience</a></li>
+              <li><a href="#portfolio">Experience</a></li>
               <li><a href="https://drive.google.com/file/d/1iV32OXT6wJGJSAqh40nMt7Yw-N6KkO83/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
               <li><Link to ="/blog">Blog</Link></li>
+              <li><a href="https://github.com/Viktor-Shcheglov" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
           </nav>
           {/* Home */}
@@ -46,7 +47,7 @@ class BotBar extends React.Component {
           <article id="work" className="wrapper style2">
             <div className="container">
               <header>
-                <h2>This site is still under development.</h2>
+                <h2>Languages and Technologies.</h2>
                 <p>Below you can find some languages and technologies I am proficient in.</p>
               </header>
               <div className="row aln-center">
@@ -87,7 +88,7 @@ class BotBar extends React.Component {
                 </div> 
               </div>
               <footer>
-              <p>You can the my complete list of my skills at the end of my resume.</p>
+              <p>You can see my complete list of my skills at the end of my resume.</p>
               <a style={{marginTop:"-5px"}} href="https://drive.google.com/file/d/1iV32OXT6wJGJSAqh40nMt7Yw-N6KkO83/view?usp=sharing" target="_blank" className="button large scrolly">Resume</a>
               </footer>
               <a href="#portfolio" className="button large scrolly">Experience</a>
